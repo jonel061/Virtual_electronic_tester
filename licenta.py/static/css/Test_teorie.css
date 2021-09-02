@@ -1,0 +1,79 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body{
+background-image: url("/static/Img/test_background4.jpg");
+    background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Times New Roman", Times, serif;
+	color:white;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.myDiv {
+  border: 2px outset snow;
+  background-color: #292F33 ;
+   margin: auto;
+  width: 23%;
+  padding: 10px;
+}
+
+
+
+.QuestionDiv{
+  width: 50%;
+border: 5px double black;
+background: snow;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.calculFormulaDiv{
+margin: auto;
+
+}
+.buttonDiv{
+     width: 3.8%;
+border: 5px double black;
+background: snow;
+  margin-left: auto;
+  margin-right: auto;
+}
+.imgresponsive {
+		width: 20%;
+		height: auto;
+	}
+@media ( max-width: 520px) {
+
+
+
+}

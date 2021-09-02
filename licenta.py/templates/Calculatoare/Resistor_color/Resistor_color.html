@@ -1,0 +1,181 @@
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistor color</title>
+        <link rel="icon" href="static/Img/Logo_VET.jpg">
+      <link href="/static/css/resistor_color_calculator.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/js/resistor_color_calculator.js"></script>
+</head>
+<body>
+<style>
+    select option {
+        margin: 40px;
+        color: white;
+    }
+    select option[value="0"]{
+        background: black;
+
+    }
+    select option[value="1"]{
+        background: brown;
+    }
+    select option[value="2"]{
+        background: red;
+    }
+    select option[value="3"]{
+        background: orange;
+    }
+    select option[value="4"]{
+        background: yellow;
+    }
+    select option[value="5"]{
+        background: green;
+    }
+    select option[value="6"]{
+        background: blue;
+    }
+    select option[value="7"]{
+        background-color: violet;
+    }
+    select option[value="8"]{
+        background: gray;
+
+    }
+    select option[value="9"]{
+        background: white;
+
+    }
+    select option[value="10"]{
+        background: gold;
+
+    }
+    select option[value="11"]{
+        background: silver;
+
+    }
+</style>
+<ul>
+ <li><a href="/Calculatoare">Menu Calculatoare</a></li>
+</ul>
+<div class="myDiv">
+   <div class="container">
+
+        <h2 style="color: white;position: relative;right: 20px" >Resistor Color Calculator</h2>
+       <br><br>
+        <div    style="color: white">
+            <p  style="position: relative;left: 10px">Alege tipul de rezistor:</p>
+            <label for="four" style="position: relative;right: 60px" ><input type="radio" id="four" name="grp"  checked onchange="check()" style="position: relative;left: 179px" > Rezistor cu 4 benzi </label><br>
+            <label for="five" style="position: relative;right: 55px"><input type="radio" id="five" name="grp"  checked onchange="check()" style="position: relative;left: 175px">Rezistor cu 5 benzi</label><br>
+            <label for="six" style="position: relative;right: 55px"><input type="radio" id="six" name="grp"  checked onchange="check()" style="position: relative;left: 175px">Rezistor cu 6 benzi</label><br>
+        </div>
+        <br>
+        <div class="container">
+            <label for="Prima_banda" style="color: white" >Alege culoarea pentru prima banda</label><br>
+            <select id="Prima_banda" onchange="change_color1(this);" class="w3-responsive">
+                <option>--</option>
+                <option value=0>Negru</option>
+                <option value=1>Maro</option>
+                <option value=2>Rosu</option>
+                <option value=3>Portocaliu</option>
+                <option value=4>Galben</option>
+                <option value=5>Verde</option>
+                <option value=6>Albastru</option>
+                <option value=7>Violet</option>
+                <option value=8>Gri</option>
+                <option value=9>Albu</option>
+            </select>
+        </div>
+        <div class="container">
+            <label for="A_doua_banda" style="color: white" >Alege culoarea pentru a doua banda </label><br>
+            <select id="A_doua_banda" onchange="change_color2(this);" class="w3-responsive">
+                 <option>--</option>
+                <option value=0>Negru</option>
+                <option value=1>Maro</option>
+                <option value=2>Rosu</option>
+                <option value=3>Portocaliu</option>
+                <option value=4>Galben</option>
+                <option value=5>Verde</option>
+                <option value=6>Albastru</option>
+                <option value=7>Violet</option>
+                <option value=8>Gri</option>
+                <option value=9>Albu</option>
+            </select>
+        </div>
+        <div class="container">
+        <label for="A_treia_banda" style="color: white" >Alege culoarea pentru a treia banda</label><br>
+        <select id="A_treia_banda" onchange="change_color5(this);" class="w3-responsive">
+             <option>--</option>
+            <option value=0>Negru</option>
+            <option value=1>Maro</option>
+            <option value=2>Rosu</option>
+            <option value=3>Portocaliu</option>
+            <option value=4>Galben</option>
+            <option value=5>Verde</option>
+            <option value=6>Albastru</option>
+            <option value=7>Violet</option>
+            <option value=8>Gri</option>
+            <option value=9>Albu</option>
+        </select>
+        </div>
+           <div class="container">
+        <label for="Multiplicator" style="color: white" >Alege culoarea pentru banda multiplicator </label><br>
+        <select id="Multiplicator" onchange="change_color3(this);" class="w3-responsive">
+             <option>--</option>
+            <option value=0>Negru</option>
+            <option value=1>Maro</option>
+            <option value=2>Rosu</option>
+            <option value=3>Portocaliu</option>
+            <option value=4>Galben</option>
+            <option value=5>Verde</option>
+            <option value=6>Albastru</option>
+            <option value=7>Violet</option>
+            <option value=8>Gri</option>
+            <option value=9>Albu</option>
+        </select>
+        </div>
+        <div class="container">
+            <label for="toleranta" style="color: white" >alege culoarea tolerantei</label><br>
+            <select id="toleranta" onchange="change_color4(this);" class="w3-responsive">
+                 <option>--</option>
+                 <option value=10>Auriu</option>
+                <option value=11>Argintiu</option>
+            </select>
+           </div>
+
+           <div class="container">
+        <label for="TCR" style="color: white" >Alege culoarea pentru TCR </label><br>
+        <select id="TCR" onchange="change_color6(this);" class="w3-responsive">
+             <option>--</option>
+            <option value=0>Negru</option>
+            <option value=1>Maro</option>
+            <option value=2>Rosu</option>
+            <option value=3>Portocaliu</option>
+            <option value=4>Galben</option>
+            <option value=5>Verde</option>
+            <option value=6>Albastru</option>
+            <option value=7>Violet</option>
+            <option value=8>Gri</option>
+        </select>
+        </div>
+  <br>
+
+
+       <label for="ans"><textarea id="ans" style="position: relative;left: 15px;width: 230px" class="w3-responsive" rows="5" cols="40">Rezultat=</textarea>
+       </label>
+       <br>
+       <br>
+
+
+
+        <button onclick="calculate()" style=" position: relative;" class="w3-responsive" >Calculează</button>
+        <button onclick="reset()" style="  position: relative;  " class=" w3-responsive">Resetează</button>
+
+
+   </div>
+</div>
+</body>
+</html>

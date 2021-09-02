@@ -1,0 +1,60 @@
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="static/Img/Logo_VET.jpg">
+    <link href="/static/css/calculator.css" rel="stylesheet">
+    <link href="/static/css/w3.css" rel="stylesheet">
+
+</head>
+<ul>
+ <li><a href="../Calculatoare">Menu Calculatoare</a></li>
+</ul>
+<br><br>
+<body>
+<div class="myDiv">
+    <h2> Convertor AC/DC</h2>
+    <form method="post" action="{{ url_for('AcToDc') }}" id="calculator_form">
+
+        <br>
+        <label for="Input1">AC:</label>
+           <label>
+        <input type="text" name="AC" id="AC" placeholder="Intoduce valoare pentru curentul alternativ" >
+           </label>
+        <br/>
+        <label for="Input2">DC:</label>
+        <label>
+        <input type="text" name="DC" id="DC" placeholder="Introduce valoare pentru curentul continu">
+        </label>
+        <br/>
+        <label for="operation">Operatie</label>
+        <select id="operation" name="operation">
+            <option value="AC to DC">1.AC to DC</option>
+            <option value="DC to AC">2.DC to AC</option>
+        </select>
+        <br/>
+            <label >Atenție dacă valoare este de tip float trebuie introdusă de exemplu 2.2 nu 2,2 !</label><br>
+            <label>Ai nevoie de un parametru care este mai mari decât 0 iar al doilea  parametru să fie 0</label>
+        <br>
+        <input type="submit" value="Submit"/>
+        <input type="reset"  value="RESET" style="color: red;"/>
+    </form>
+    {% if calculation_success == True %}
+        <br/>
+        <p>Rezultatul:</p>
+        <label>
+            <input type="text" name="Rezultat"  {{input1}}  {{operation}} {{input2}} value="{{result}} {{"A"}}" >
+        </label>
+    {% endif %}
+    {% if calculation_success == False %}
+        <br/>
+        <label>
+        <input >{{error}}
+           </label>
+        <p>{{input1}} {{operation}} {{input2}} ={{result}}"</p>
+    {% endif %}
+
+</div>
+</body>
+</html>

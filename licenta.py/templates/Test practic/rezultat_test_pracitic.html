@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="static/Img/Logo_VET.jpg">
+        <link href="/static/css/Test_teorie.css" rel="stylesheet">
+  <link href="/static/css/w3.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <title>Rezultat test practic</title>
+
+
+
+
+
+  <style>
+
+      #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+ <style>
+        .ul{
+            display: inline-block;
+            padding-left: 0;
+            text-align: left;
+        }
+           button{
+       background-color: #07c5f8;
+       padding: 6px 10px;
+       margin-left: auto;
+       margin-right: auto;
+       position: relative;
+
+
+   }
+
+   .center {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+    </style>
+
+<script>
+    function  confirmation() {
+        var ask = window.confirm("Dorești să te intorci la pagina principală?");
+        if (ask) {
+             window.location.href = "/";
+        }
+    }
+    $(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+
+  });
+  $("#show").click(function(){
+    $("p").show();
+
+  });
+});
+     $( function() {
+    $( "#tabs" ).tabs();
+  } );
+
+        $( function() {
+    $( "#tabs2" ).tabs();
+  } );
+
+    $( function() {
+    $( "#tabs3" ).tabs();
+  } );
+
+
+
+</script>
+
+
+<body>
+
+<div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+    <header class="w3-container w3-light-grey" >
+     <h3 style="background: #07c5f8">Rezultat</h3>
+            </header>
+         <div class="w3-container" style="background: white ; color:black" >
+       <div class="ul">
+<p style="font-size: x-large">Ați rapsuns la {{ corect }} exerciți corect</p>
+<p style="font-size: x-large"> Ați rapsuns la {{ incorect }} exerciți incorect</p>
+           <p style="font-size: x-large">Nota obținută este {{ nota }} </p>
+<div class="w3-center">
+               <div class="modal fade" id="Test_practic" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" ><span aria-hidden="true" >&times;</span></button>
+                    <div class="w3-center">
+                    <h4 class="modal-title" id="myModalLabel" style="background: #07c5f8;color: white" >Dorești să te întroci pe pagina principală?</h4>
+                </div>
+                    </div>
+                <div class="modal-footer">
+                    <button  style="height: 9mm;width: 10mm;align-content: center;background: #07c5f8;color: white"  type="button" class="btn btn-default"   data-dismiss="modal">Nu</button>
+                    <a type="button"   style="background: #07c5f8;color: white"  class="btn btn-default" href="/" >Da</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <a data-toggle="modal" data-target="#Test_practic" href="#"> <button type="submit" class="btn btn-primary" style="background: #07c5f8;color: white">Pagina priniciaplă</button> </a>
+    </div>
+       </div>
+</div>
+       </div>
+  </div>
+</div>
+<br>
+
+
+<div class="center">
+<div id="tabs" style="width:49%"  >
+  <ul>
+    <li><a href="#tabs-1-Exercitiu1" style="align-content: center">Rezultat</a></li>
+    <li><a href="#tabs-2-Exercitiu1">Pașii pentru rezolvare</a></li>
+  </ul>
+  <div id="tabs-1-Exercitiu1">
+<div class="w3-container" align="center">
+  <div class="w3-card-4" >
+    <header class="w3-container w3-light-grey" >
+     <h4 style="background: #07c5f8">Rezultat exercițiu 1</h4>
+            </header>
+       <div class="w3-container" style="background: white ; color:black" >
+<p align="left">{{ mesaj1a }}</p>
+           <p align="left">{{ mesaj1b }}</p>
+           <p align="left">{{ mesaj1c }}</p>
+       </div>
+  </div>
+</div>
+  </div>
+  <div id="tabs-2-Exercitiu1" >
+
+<iframe src="/Problema1_pasii_de_rezolvare" width="100%" height="450" frameborder="0" title="Problema1" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">  </iframe>
+			</div>
+		</div>
+    </div>
+
+
+
+<br>
+
+<div class="center">
+<div id="tabs2" style="width:49%"  >
+  <ul>
+    <li><a href="#tabs-1-Exercitiu2" style="align-content: center">Rezultat</a></li>
+    <li><a href="#tabs-2-Exercitiu2">Pașii pentru rezolvare</a></li>
+  </ul>
+  <div id="tabs-1-Exercitiu2">
+<div class="w3-container" align="center" >
+  <div class="w3-card-4" >
+    <header class="w3-container w3-light-grey" >
+     <h4 style="background: #07c5f8">Rezultat exercițiu 2</h4>
+            </header>
+       <div class="w3-container" style="background: white ; color:black" >
+<p align="left">{{ mesaj2}}</p>
+<p align="left">{{ mesaj2b}}</p>
+<p align="left">{{ mesaj2c}}</p>
+<p align="left">{{ mesaj2d}}</p>
+    </div>
+  </div>
+</div>
+  </div>
+  <div id="tabs-2-Exercitiu2" >
+<iframe src="/Problema2_pasii_de_rezolvare" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
+
+               </div>
+
+      </div>
+
+  </div>
+
+<br>
+<div class="center">
+<div id="tabs3" style="width:49%"  >
+  <ul>
+    <li><a href="#tabs-1-Exercitiu3" style="align-content: center">Rezultat</a></li>
+    <li><a href="#tabs-2-Exercitiu3">Pașii pentru rezolvare</a></li>
+  </ul>
+  <div id="tabs-1-Exercitiu3">
+<div class="w3-container" align="center" >
+  <div class="w3-card-4" >
+    <header class="w3-container w3-light-grey" >
+     <h4 style="background: #07c5f8">Rezultat exercițiu 3</h4>
+            </header>
+       <div class="w3-container" style="background: white ; color:black" >
+<p align="left">{{ mesaj3a}}</p>
+<p align="left">{{ mesaj3b}}</p>
+<p align="left">{{ mesaj3c}}</p>
+<p align="left">{{ mesaj3d}}</p>
+
+    </div>
+  </div>
+</div>
+  </div>
+  <div id="tabs-2-Exercitiu3" >
+<iframe src="/Problema3_pasii_de_rezolvare" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
+
+  </div>
+</div>
+</div>
+
+
+<div class="w3-center">
+<button id="hide" style="color: white;background: #07c5f8" >Hide</button>
+<button id="show" style="color: white;background: #07c5f8">Show</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ro">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="../../static/reveal/dist/reset.css">
+		<link rel="stylesheet" href="../../static/reveal/dist/reveal.css">
+		<link rel="stylesheet" href="../../static/reveal/dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../../static/reveal/plugin/highlight/monokai.css" id="highlight-theme">
+
+
+
+	</head>
+	<body>
+    <style>
+    @media ( max-width: 520px) {
+        p{
+            font-size: 15px;
+        }
+    }
+        </style>
+
+	<div class="reveal">
+   <div class="slides">
+              <section data-background-color="white">
+      <section data-background-color="white" ><h5 style="color: black">Rezolvare exercițiu 1</h5>
+                  <p style="color: black;" align="" >Știm că R1=50&Omega;,R2=2&Omega;,R3=4&Omega;,R4=6&Omega;,R5=60&Omega; și R6=40&Omega;.Pentru a rezolva subpunctul a  trebuie să identificăm formulele necesare pentru a determina rezistența totală.</p>
+                  <img src="/static/Img/Img_Teoria/Rezistor_formula+schema.png" width="377" height="250" alt="rezistor_formula_schema"></section>
+                  <section> <p style="color: black;" align="">Pasul 2 trebuie să indentificăm prima pereche de rezistori</p>
+                  <img src="/static/Img/Img_test_practic/Exercitiu1.png" width="800" height="400" alt="exercitiu1">
+                      <p style="color: black;" align="">prima perche de rezistor sunt R5 și R6</p></section>
+                  <section> <p style="color: black;" align=""> R5 și R6 sunt într-o relație paralelă și folosim formula: <br>
+                      RTparalel= (R5 &sdot; R6) / (R5+R6)= (40 &sdot; 60) / (40+60)=<br>(2400 / 100)=24 &Omega; </p> </section>
+                         <section><p style="color: black;">Pasul 3  trebuie să redesenăm schema </p><br>
+                         <img src="/static/Img/Img_test_practic/Exercitiu1_pasul3.png" width="800" height="400" alt="ex1p3"> </section>
+                    <section> <p style="color: black;" align="">Pasul 4 trebuie să identificăm a doua pereche de rezistori
+                        a doua pereche de rezistor sunt R56 și R4 <br>sunt într-o serială și folosim formula RT serial:</p>
+                    <div class="center">
+                        <p style="color:black;">R56 + R4= 24 + 6 =30 &Omega; </p>
+                            </div>
+
+                 </section>
+        <section><p style="color: black;" align="center">Pasul 5  trebuie să redesenăm schema</p>
+        <img src="/static/Img/Img_test_practic/Exercitiu1_pasul5.png" width="800" height="400" alt="ex1p5"></section>
+        <section><p style="color: black; " align="center">Pasul 6 identificăm a treia pereche de rezistori
+            a treia pereche de rezistor sunt R456 și R3 care sunt într-o relație paralelă și folosim formula RT paralel: </p>
+            <p style="color: black; " align="center"> RTparalel=( R456 &sdot; R3 )/( R456+R3)= (30  &sdot; 4 )/(30+4) <br> =(120 / 34)=3.53 &Omega; </p>  </section>
+        <section><p style="color: black;">Pasul 7 redesenăm schema
+        <img src="/static/Img/Img_test_practic/Exercitiu1_pasul_7.png" width="800" height="400"></section>
+        <section><p style="color: black;" align="left">Pasul 8 identificăm a patra pereche de rezistori<br> a patra pereche sunt R3456 și R2 care sunt într-o relație paralelă și folosim formula RT serial</p>
+          <div class="center">
+              <p style="color:black;" align="center" > R3456 + R2= 3,53+ 2 =5.53 &Omega; </p>
+                  </div>
+        </section>
+        <section><p style="color: black;">Pasul 9 redesenăm schema</p><br>
+            <img src="/static/Img/Img_test_practic/Exercitiu1_pasul9.png" width="800" height="400">
+        </section>
+        <section><p style="color: black;" align="left">Pasul 10 identificăm ultima  pereche  de rezistori ultima pereche  de rezistori sunt R23456 și R1 care sunt într-o relație paralelă și folosim formula RT paralel:
+            <p style="color: black" align="center" > RTparalel= (R23456 &sdot; R1 )/( R23456+R1)= <br> ( 5,53 &sdot; 50) / ( 5,53+50) = (276.5 / 55,53)=4.98 &Omega; <br>     RT=4,98 &Omega; </p>
+
+        </section>
+            <section><p style="color: black;" align="left">Pentru a rezolva subpunctul b trebuie să identificăm formula lui Ohm pentru tensiune care este: U=I &sdot; R </p>
+                <p style="color: black;" align="center">RT este egal cu R<br>U=60 &sdot; 4,98=298,8V</p>
+
+            </section>
+
+
+
+                </section>
+
+
+
+
+
+
+
+			</div>
+		</div>
+
+
+
+       <script src="../../static/reveal/plugin/math/math.js"></script>
+		<script src="../../static/reveal/dist/reveal.js"></script>
+		<script src="../../static/reveal/plugin/notes/notes.js"></script>
+		<script src="../../static/reveal/plugin/markdown/markdown.js"></script>
+		<script src="../../static/reveal/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+  Reveal.initialize({
+    math: {
+      mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+      config: 'TeX-AMS_HTML-full',
+      // pass other options into `MathJax.Hub.Config()`
+      TeX: { Macros: { RR: "{\\bf R}" } }
+    },
+    plugins: [ RevealMath ]
+  });
+		</script>
+
+	</body>
+</html>

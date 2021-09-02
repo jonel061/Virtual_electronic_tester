@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Test teorie</title>
+     <link rel="icon" href="static/Img/Logo_VET.jpg">
+     <link href="/static/css/w3.css" rel="stylesheet">
+     <link href="/static/css/Test_teorie.css" rel="stylesheet">
+
+
+</head>
+
+<div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+    <header class="w3-container w3-light-grey" >
+      <H1 style="color:black;background: #07c5f8 " align="center" >Test teorie vet</H1>
+    </header>
+  </div>
+</div>
+<br>
+<form name="test" method="post" action="{{ url_for('Test_teorie_rezultat') }}">
+   <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+    <header class="w3-container w3-light-grey" >
+     <h4 style="background: #07c5f8">{{intrebare1}}</h4>
+            </header>
+       <div class="w3-container" style="background: white ; color:black" >
+<label>
+   <p style="color: #111111" align="left" > <input type="radio"  name="Intrebarea1" value="{{ intrebare1_raspuns1}}">A.{{ intrebare1_raspuns1}}</p>
+</label>
+<label>
+   <p  style="color: #111111" align="left" > <input type="radio" name="Intrebarea1" value="{{ intrebare1_raspuns2}}">B.{{ intrebare1_raspuns2}}</p>
+</label>
+    <label>
+   <p style="color: #111111" align="left"  > <input type="radio" name="Intrebarea1" value="{{ intrebare1_raspuns3}}">C.{{ intrebare1_raspuns3}}</p>
+</label>
+        <label>
+   <p style="color: #111111" align="left"  > <input type="radio" name="Intrebarea1" value="{{ intrebare1_raspuns4}}">D.{{ intrebare1_raspuns4}}</p>
+</label>
+</div>
+       </div>
+         </div>
+<br>
+    <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+    <header class="w3-container w3-light-grey" >
+     <h4 style="background: #07c5f8">{{ intrebare2 }}</h4>
+            </header>
+       <div class="w3-container" style="background: white ; color:black" >
+    <label>
+       <p style="color: #111111"  align="left"> <input type="checkbox" name="Intrebarea2" value="{{intrebare2_raspuns1}}" id="{{intrebare2_raspuns1 }}">A.{{intrebare2_raspuns1}}</p>
+</label>
+
+<label>
+   <p style="color: #111111"   align="left"> <input type="checkbox" name="Intrebarea2" value="{{intrebare2_raspuns2}}" id="{{intrebare2_raspuns2}}">B.{{intrebare2_raspuns2}} </p>
+</label>
+    <label>
+   <p style="color: #111111"  align="left"> <input type="checkbox" name="Intrebarea2" value="{{intrebare2_raspuns3}}" id="{{intrebare2_raspuns3}}">C.{{intrebare2_raspuns3}}</p>
+</label>
+        <label>
+   <p style="color: #111111"  align="left" > <input type="checkbox" name="Intrebarea2" value="{{intrebare2_raspuns4}}" id="{{intrebare2_raspuns4}}">D.{{intrebare2_raspuns4}}</p>
+</label>
+    </div>
+  </div>
+    </div>
+<br>
+
+
+        <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+    <header class="w3-container w3-light-grey" >
+     <h4 style="background: #07c5f8">{{ intrebare3 }}</h4>
+            </header>
+       <div class="w3-container" style="background: white ; color:black" >
+    <label>
+       <p style="color: #111111" align="left" > <input type="checkbox" name="Intrebarea3" value="{{intrebare3_raspuns1}}" id="{{intrebare3_raspuns1}}">A.{{intrebare3_raspuns1}}</p>
+</label>
+
+<label>
+   <p style="color: #111111"  align="left"  > <input type="checkbox" name="Intrebarea3" value="{{intrebare3_raspuns2}}" id="{{intrebare3_raspuns2}}">B.{{intrebare3_raspuns2}} </p>
+</label>
+    <label>
+   <p style="color: #111111"  align="left" > <input type="checkbox" name="Intrebarea3" value="{{intrebare3_raspuns3}}" id="{{intrebare3_raspuns3}}">C.{{intrebare3_raspuns3}}</p>
+</label>
+        <label>
+   <p style="color: #111111"  align="left"  > <input type="checkbox" name="Intrebarea3" value="{{intrebare3_raspuns4}}" id="{{intrebare3_raspuns4}}">D.{{intrebare3_raspuns4}}</p>
+</label>
+    </div>
+         </div>
+               </div>
+<br>
+
+
+      <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+    <header class="w3-container w3-light-grey" >
+     <h4 style="background: #07c5f8">{{ intrebare4 }}</h4>
+            </header>
+       <div class="w3-container" style="background: white ; color:black" >
+    <label>
+       <p style="color: #111111" align="left" > <input type="checkbox" name="Intrebarea4" value="{{intrebare4_raspuns1}}" id="{{intrebare4_raspuns1}}">A.{{intrebare4_raspuns1}}</p>
+</label>
+
+<label>
+   <p style="color: #111111" align="left" > <input type="checkbox" name="Intrebarea4" value="{{intrebare4_raspuns2}}" id="{{intrebare4_raspuns2}}">B.{{intrebare4_raspuns2}}</p>
+</label>
+    <label>
+   <p style="color: #111111" align="left"> <input type="checkbox" name="Intrebarea4" value="{{intrebare4_raspuns3}}" id="{{intrebare4_raspuns3}}">C.{{intrebare4_raspuns3}}</p>
+</label>
+        <label>
+   <p style="color: #111111" align="left" > <input type="checkbox" name="Intrebarea4" value="{{intrebare4_raspuns4}}" id="{{intrebare4_raspuns4}}">D.{{intrebare4_raspuns4}}</p>
+</label>
+    </div>
+          </div>
+              </div>
+<br>
+
+
+      <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+    <header class="w3-container w3-light-grey" >
+     <h4 style="background: #07c5f8">{{ intrebare5 }}</h4>
+            </header>
+       <div class="w3-container" style="background: white ; color:black" >
+<label>
+   <p style="color: #111111"  align="left"> <input type="radio" name="Intrebarea5" value="{{intrebare5_raspuns1}}">A.{{intrebare5_raspuns1}}</p>
+</label>
+<label>
+   <p  style="color: #111111" align="left"> <input type="radio" name="Intrebarea5" value="{{intrebare5_raspuns2}}">B.{{intrebare5_raspuns2}}</p>
+</label>
+    <label>
+   <p style="color: #111111" align="left"> <input type="radio" name="Intrebarea5" value="{{intrebare5_raspuns3}}">C.{{intrebare5_raspuns3}}</p>
+</label>
+        <label>
+   <p style="color: #111111"  align="left"> <input type="radio" name="Intrebarea5" value="{{intrebare5_raspuns4}}">D.{{intrebare5_raspuns4}}</p>
+</label>
+</div>
+      </div>
+          </div>
+<br>
+
+     <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+    <header class="w3-container w3-light-grey" >
+     <h4 style="background: #07c5f8">{{ intrebare6 }}</h4>
+            </header>
+       <div class="w3-container" style="background: white ; color:black" >
+<label>
+   <p style="color: #111111"  align="left"> <input type="radio" name="Intrebarea6" value="{{intrebare6_raspuns1}}">A.{{intrebare6_raspuns1}}</p>
+</label>
+<label>
+   <p  style="color: #111111" align="left"> <input type="radio" name="Intrebarea6" value="{{intrebare6_raspuns2}}">B.{{intrebare6_raspuns2}}</p>
+</label>
+    <label>
+   <p style="color: #111111"  align="left"> <input type="radio" name="Intrebarea6" value="{{intrebare6_raspuns3}}">C.{{intrebare6_raspuns3}}</p>
+</label>
+        <label>
+   <p style="color: #111111" align="left" > <input type="radio" name="Intrebarea6" value="{{intrebare6_raspuns4}}">D.{{intrebare6_raspuns4}}</p>
+</label>
+</div>
+      </div>
+         </div>
+<br>
+
+            <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+    <header class="w3-container w3-light-grey" >
+     <h4 style="background: #07c5f8">{{ intrebare7 }}</h4>
+            </header>
+       <div class="w3-container" style="background: white ; color:black" >
+    <label>
+       <p style="color: #111111" align="left" > <input type="checkbox" name="Intrebarea7" value="{{intrebare7_raspuns1}}" id="{{intrebare7_raspuns1}}">A.{{intrebare7_raspuns1}}</p>
+</label>
+
+<label>
+   <p style="color: #111111" align="left"  > <input type="checkbox" name="Intrebarea7" value="{{intrebare7_raspuns2}}" id="{{intrebare7_raspuns2}}">B.{{intrebare7_raspuns2}}</p>
+</label>
+    <label>
+   <p style="color: #111111" align="left" > <input type="checkbox" name="Intrebarea7" value="{{intrebare7_raspuns3}}" id="{{intrebare7_raspuns3}}">C.{{intrebare7_raspuns3}}</p>
+</label>
+        <label>
+   <p style="color: #111111" align="left"  > <input type="checkbox" name="Intrebarea7" value="{{intrebare7_raspuns4}}" id="{{intrebare7_raspuns4}}">D.{{intrebare7_raspuns4}}</p>
+</label>
+    </div>
+      </div>
+                </div>
+<br>
+
+  <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+    <header class="w3-container w3-light-grey" >
+     <h4 style="background: #07c5f8">{{ intrebare8 }}</h4>
+            </header>
+       <div class="w3-container" style="background: white ; color:black" >
+<label>
+   <p style="color: #111111" align="left" > <input type="radio" name="Intrebarea8" value="{{intrebare8_raspuns1}}">A.{{intrebare8_raspuns1}}</p>
+</label>
+<label>
+   <p  style="color: #111111" align="left"> <input type="radio" name="Intrebarea8" value="{{intrebare8_raspuns2}}">B.{{intrebare8_raspuns2}}</p>
+</label>
+    <label>
+   <p style="color: #111111" align="left" > <input type="radio" name="Intrebarea8" value="{{intrebare8_raspuns3}}">C.{{intrebare8_raspuns3}}</p>
+</label>
+        <label>
+   <p style="color: #111111" align="left" > <input type="radio" name="Intrebarea8" value="{{intrebare8_raspuns4}}">D.{{intrebare8_raspuns4}}</p>
+</label>
+</div>
+      </div>
+      </div>
+<br>
+
+<div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+    <header class="w3-container w3-light-grey" >
+     <h4 style="background: #07c5f8">{{ intrebare9 }}</h4>
+            </header>
+       <div class="w3-container" style="background: white ; color:black" >
+<label>
+   <p style="color: #111111"  align="left" > <input type="radio" name="Intrebarea9" value="{{intrebare9_raspuns1}}">A.{{intrebare9_raspuns1}}</p>
+</label>
+<label>
+   <p  style="color: #111111"  align="left"> <input type="radio" name="Intrebarea9" value="{{intrebare9_raspuns2}}">B.{{intrebare9_raspuns2}}</p>
+</label>
+    <label>
+   <p style="color: #111111"   align="left"> <input type="radio" name="Intrebarea9" value="{{intrebare9_raspuns3}}">C.{{intrebare9_raspuns3}}</p>
+</label>
+        <label>
+   <p style="color: #111111"   align="left"> <input type="radio" name="Intrebarea9" value="{{intrebare9_raspuns4}}">D.{{intrebare9_raspuns4}}</p>
+</label>
+</div>
+      </div>
+    </div>
+<br>
+
+<div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+    <header class="w3-container w3-light-grey" >
+     <h4 style="background: #07c5f8">{{ intrebare10 }}</h4>
+            </header>
+       <div class="w3-container" style="background: white ; color:black" >
+<label>
+   <p style="color: #111111" align="left" > <input type="checkbox" name="Intrebarea10" value="{{ intrebare10_raspuns1}}" id="{{ intrebare10_raspuns1}}"> A.{{ intrebare10_raspuns1}}</p>
+</label>
+<label>
+   <p  style="color: #111111" align="left"> <input type="checkbox" name="Intrebarea10" value="{{ intrebare10_raspuns2}}" id="{{ intrebare10_raspuns2}}">B.{{ intrebare10_raspuns2}}</p>
+</label>
+    <label>
+   <p style="color: #111111" align="left"> <input type="checkbox" name="Intrebarea10" value="{{ intrebare10_raspuns3}}" id="{{ intrebare10_raspuns3}}">C.{{ intrebare10_raspuns3}}</p>
+</label>
+        <label>
+   <p style="color: #111111"  align="left"> <input type="checkbox" name="Intrebarea10" value="{{ intrebare10_raspuns4}}" id="{{ intrebare10_raspuns4}}">D.{{ intrebare10_raspuns4}}</p>
+</label>
+</div>
+      </div>
+    </div>
+<br>
+
+       <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+    <header class="w3-container w3-light-grey" >
+     <h4 style="background: #07c5f8">{{ intrebare11 }}</h4>
+            </header>
+       <div class="w3-container" style="background: white ; color:black" >
+<label>
+   <p style="color: #111111" align="left"> <input type="radio" name="Intrebarea11" value="{{ intrebare11_raspuns1 }}">A.{{ intrebare11_raspuns1 }}</p>
+</label>
+<label>
+   <p  style="color: #111111" align="left"> <input type="radio" name="Intrebarea11" value="{{ intrebare11_raspuns2 }}">B.{{ intrebare11_raspuns2 }}</p>
+
+</label>
+    <label>
+   <p style="color: #111111" align="left" > <input type="radio" name="Intrebarea11" value="{{ intrebare11_raspuns3 }}">C.{{ intrebare11_raspuns3 }}</p>
+</label>
+        <label>
+   <p style="color: #111111" align="left" > <input type="radio" name="Intrebarea11" value="{{ intrebare11_raspuns4 }}">
+       D.{{ intrebare11_raspuns4 }}</p>
+</label>
+</div>
+      </div>
+           </div>
+<br>
+
+        <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+    <header class="w3-container w3-light-grey" >
+     <h4 style="background: #07c5f8">{{ intrebare12 }}</h4>
+            </header>
+       <div class="w3-container" style="background: white ; color:black" >
+<label>
+   <p style="color: #111111" align="left" > <input type="checkbox" name="Intrebarea12" value="{{ intrebare12_raspuns1 }}" id="{{ intrebare12_raspuns1 }}"> A.{{ intrebare12_raspuns1 }}</p>
+</label>
+<label>
+   <p  style="color: #111111" align="left" > <input type="checkbox" name="Intrebarea12" value="{{ intrebare12_raspuns2 }}" id="{{ intrebare12_raspuns2 }}">B.{{ intrebare12_raspuns2 }}</p>
+</label>
+    <label>
+   <p style="color: #111111" align="left"  > <input type="checkbox" name="Intrebarea12" value="{{ intrebare12_raspuns3 }}" id="{{ intrebare12_raspuns3 }}">C.{{ intrebare12_raspuns3 }}</p>
+</label>
+        <label>
+   <p style="color: #111111" align="left"  > <input type="checkbox" name="Intrebarea12" value="{{ intrebare12_raspuns4 }}" id="{{ intrebare12_raspuns4 }}">D.{{ intrebare12_raspuns4 }}</p>
+</label>
+        <label>
+   <p style="color: #111111" align="left"  > <input type="checkbox" name="Intrebarea12" value="{{ intrebare12_raspuns5 }}" id="{{ intrebare12_raspuns5 }}">E.{{ intrebare12_raspuns5 }}</p>
+</label>
+        <label>
+   <p style="color: #111111" align="left"  > <input type="checkbox" name="Intrebarea12" value="{{ intrebare12_raspuns6 }}" id="{{  intrebare12_raspuns6}}">F.{{  intrebare12_raspuns6}}</p>
+</label>
+</div>
+      </div>
+            </div>
+<br>
+
+        <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+    <header class="w3-container w3-light-grey" >
+     <h4 style="background: #07c5f8">{{ intrebare13 }}</h4>
+            </header>
+       <div class="w3-container" style="background: white ; color:black" >
+<label>
+   <p style="color: #111111" align="left" > <input type="radio" name="Intrebarea13" value="{{ intrebare13_raspuns1 }}">A.{{ intrebare13_raspuns1 }}</p>
+</label>
+<label>
+   <p  style="color: #111111" align="left"> <input type="radio" name="Intrebarea13" value="{{ intrebare13_raspuns2}}">B.{{ intrebare13_raspuns2}}</p>
+</label>
+    <label>
+   <p style="color: #111111"  align="left"> <input type="radio" name="Intrebarea13" value="{{ intrebare13_raspuns3}}">C.{{ intrebare13_raspuns3}}</p>
+</label>
+        <label>
+   <p style="color: #111111" align="left" > <input type="radio" name="Intrebarea13" value="{{ intrebare13_raspuns4}}">D.{{ intrebare13_raspuns4}}</p>
+</label>
+</div>
+      </div>
+            </div>
+<br>
+
+              <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+    <header class="w3-container w3-light-grey" >
+     <h4 style="background: #07c5f8">{{ intrebare14 }}</h4>
+            </header>
+       <div class="w3-container" style="background: white ; color:black" >
+<label>
+   <p style="color: #111111" align="left" > <input type="radio" name="Intrebarea14" value="{{ intrebare14_raspuns1 }}">A.{{ intrebare14_raspuns1 }}</p>
+</label>
+<label>
+   <p  style="color: #111111" align="left"> <input type="radio" name="Intrebarea14" value="{{ intrebare14_raspuns2 }}">B.{{ intrebare14_raspuns2 }}(&Omega;)</p>
+</label>
+    <label>
+   <p style="color: #111111" align="left"> <input type="radio" name="Intrebarea14" value="{{ intrebare14_raspuns3}}">C.{{ intrebare14_raspuns3}}</p>
+</label>
+        <label>
+   <p style="color: #111111"  align="left"> <input type="radio" name="Intrebarea14" value="{{ intrebare14_raspuns4}}">D.{{ intrebare14_raspuns4}}</p>
+</label>
+</div>
+      </div>
+                  </div>
+<br>
+
+
+
+<div class="w3-center">
+    <input type="submit" value="Submit"  style="background: #07c5f8;color: white;width: 300px;height: 70px"/>
+
+</div>
+
+
+</form>
+
+
+
+
+
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ro">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js 2</title>
+
+		<link rel="stylesheet" href="../../static/reveal/dist/reset.css">
+		<link rel="stylesheet" href="../../static/reveal/dist/reveal.css">
+		<link rel="stylesheet" href="../../static/reveal/dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../../static/reveal/plugin/highlight/monokai.css" id="highlight-theme">
+
+
+    </head>
+	<body>
+     <style>
+    @media ( max-width: 520px) {
+        p{
+            font-size: 30px;
+        }
+    }
+        </style>
+		<div class="reveal">
+			<div class="slides">
+                <section data-background-color="white">
+				<section data-background-color="white" ><h5 style="color: black">Rezolvare exercițiu 3</h5>
+                    <p style="color: black;" align="center" > Știm că C1=10nF, C2=20nF, Q1=100nC, Q2=200nC
+                        Pentru a rezolva subproblema a trebuie să identificăm formula pentru U1=?</p>
+                    <p style="color: black"  align="center"> U1=(Q1 / C1)=(100nc / 10nF)=10V</p>
+                        </section>
+     <section> <p style="color: black;font-size: smaller" align="center">Pentru a rezolva subpunctul b trebuie să determinăm în ce tip de relație este C2 cu C1
+         pentru că C1 și C2 sunt în relație paralelă U1=U2  ce înseamnă că U1=U2 și U2=10V
+
+         </section>
+
+                    <section><div class="center">
+                        <p style="color: black;" align="center">Pentru a rezolva subpunctul c trebuie să determinăm formula pentru Q2=?</p>
+                        <p style="color: black"  align="center"> Q2=(C2 &sdot; U2)=200nC </p>
+                  </div>   </section>
+  <section><div class="center">
+      <p style="color: black;" align="left">Pentru a rezolva subpunctul știm că c1 și c2 sunt într-o relație paralelă=? ce înseamnă că</p>
+                              <p style="color: black"  align="center">       Q12=(Q1 + Q2)=(100 + 200)=300nC   </p>
+                </div>   </section>
+
+                </section>
+			</div>
+		</div>
+
+        <script src="../../static/reveal/plugin/math/math.js"></script>
+		<script src="../../static/reveal/dist/reveal.js"></script>
+		<script src="../../static/reveal/plugin/notes/notes.js"></script>
+		<script src="../../static/reveal/plugin/markdown/markdown.js"></script>
+		<script src="../../static/reveal/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+  Reveal.initialize({
+    math: {
+      mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+      config: 'TeX-AMS_HTML-full',
+      // pass other options into `MathJax.Hub.Config()`
+      TeX: { Macros: { RR: "{\\bf R}" } }
+    },
+    plugins: [ RevealMath ]
+  });
+		</script>
+	</body>
+</html>

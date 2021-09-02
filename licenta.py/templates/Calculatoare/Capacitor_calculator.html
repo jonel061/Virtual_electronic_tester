@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="static/Img/Logo_VET.jpg">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="/static/css/w3.css" rel="stylesheet">
+
+    <link href="/static/css/calculator.css" rel="stylesheet">
+
+
+</head>
+<body>
+<ul>
+ <li><a href="../Calculatoare">Menu Calculatoare</a></li>
+</ul>
+<br><br>
+<div class="FormulaDiv">
+    <div class="w3-center">
+    <img src="/static/Img/Img_Teoria/Capacitor_formula+schema.png"  class="imgresponsive3" alt="capacitor_formula_schema">
+    </div>
+</div>
+<div class="myDiv">
+    <h2> Calculator Capacitor</h2>
+    <form method="post" action="{{ url_for('capacitor_calculator') }}" id="calculator_form">
+        <label for="Input1">Capacitor1:</label>
+        <input type="text" name="Input1" id="Input1" placeholder="Introduceți valoarea primului capacitor">
+        <br/>
+        <label for="Input2">Capacitor2:</label>
+        <input type="text" name="Input2" id="Input2" placeholder="Introduceți valoarea pentru al doilea capacitor">
+        <br/>
+        <label for="operation">Operatie</label>
+        <select id="operation" name="operation" >
+            <option value="serial">1.serial</option>
+            <option value="paralel">2.paralel</option>
+        </select>
+        <br>
+        <br/>
+          <label >Atenție dacă valoare este de tip float trebuie introdusă de exemplu 2.2 nu 2,2 !</label>
+          <br>        <br>
+        <input type="submit" value="Submit"/>
+        <input type="reset"  value="RESET" style="color: red;"/>
+    </form>
+    {% if calculation_success == True %}
+        <br/>
+        <p>Rezultatul:</p>
+        <label>
+         <input type="text" name="Rezultat"  value=" {{"Ct="}} {{result}} {{"F"}}">
+        </label>
+    {% endif %}
+    {% if calculation_success == False %}
+        <br/>
+        <label>
+        <p>{{error}}</p>
+        </label>
+        <p>{{input1}} {{operation}} {{input2}} ={{result}}"</p>
+    {% endif %}
+</div>
+
+</body>
+</html>

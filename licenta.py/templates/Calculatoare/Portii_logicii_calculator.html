@@ -1,0 +1,57 @@
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="static/Img/Logo_VET.jpg">
+    <link href="/static/css/calculator.css" rel="stylesheet">
+    <link href="/static/css/w3.css" rel="stylesheet">
+
+</head>
+<body>
+<ul>
+ <li><a href="../Calculatoare">Menu Calculatoare</a></li>
+</ul>
+<br><br>
+<div class="FormulaDiv"><img src="/static/Img/Img_Teoria/Logic_port.png"  alt="Portii_logicii" class="imgresponsive2"></div>
+<div class="myDiv">
+    <h2> Calculator portii logicii</h2>
+     <p>Valoare al lui A si B trebuie sa fie 0 sau 1</p>
+    <form method="post" action="{{ url_for('operation_result') }}" id="calculator_Portii_form">
+        <label for="A">A:</label>
+        <input type="text" name="A" id="A" placeholder="Introduceți 0 sau 1 pentru A ">
+        <br/>
+        <label for="B">B:</label>
+        <input type="text" name="B" id="B" placeholder="Introduceți 0 sau 1 pentru B">
+        <br/>
+        <label for="operation">Operatie</label>
+        <select id="operation" name="operation">
+            <option value="AND">1.AND</option>
+            <option value="NAND">2.NAND</option>
+             <option value="OR">3.OR</option>
+            <option value="Inverter">4.INVERTER</option>
+            <option value="NOR">5.NOR</option>
+             <option value="XNOR">6.XNOR</option>
+        </select>
+        <br/>
+        <br>
+        <input type="submit" value="Submit"/>
+        <input type="reset"  value="RESET" style="color: red;"/>
+    </form>
+    {% if calculation_success == True %}
+        <br/>
+        <p>Rezultatul:</p>
+        <label>
+            <input type="text" name="Result" value="{{result}}">
+        </label>
+    {% endif %}
+    {% if calculation_success == False %}
+        <br/>
+        <label>
+            <input >{{error}}
+        </label>
+        <p>{{A}} {{operation}} {{B}} = "{{result}}"</p>
+    {% endif %}
+</div>
+</body>
+</html>

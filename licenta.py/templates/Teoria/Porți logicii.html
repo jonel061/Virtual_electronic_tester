@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Porții logice</title>
+        <link rel="icon" href="static/Img/Logo_VET.jpg">
+        <link  rel="stylesheet" href="/static/css/teoria.css" >
+        <link href="/static/css/w3.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<div class="nav">
+<ul>
+   <li><a >Home</a>
+    <ul>
+    <li><a href="..">Home</a></li>
+    <li><a href="/Teoria">Home Teoria</a></li>
+         </ul>
+      </li>
+     <li><a>Introducere</a>
+	    <ul>
+		    <li><a href="/Curentul electric" >Curentul electic</a></li>
+		    <li><a href="/Tensiunea electrică" >Tenisunea electrică</a></li>
+		    <li><a href="/Rezistența electrică" >Rezistența electrică</a></li>
+            <li><a href="/Puterea electrică">Puterea electrică</a> </li>
+            <li><a href=" /Legea lui Ohm">Legea lui Ohm</a> </li>
+	   </ul>
+    </li>
+    <li><a >Componente  pasive</a>
+	    <ul>
+		    <li><a href="/Resistor" >Rezistor</a></li>
+		    <li><a href="/Condesator" >Capacitor</a></li>
+		    <li><a href="/Inductor" >Inductor</a></li>
+	   </ul>
+    </li>
+    <li><a >Componente active</a>
+        <ul>
+              <li><a href="/Semiconductor">Semiconductor</a>
+            <li><a href="/Joncțiune PN">Joncțiune</a> </li>
+             <li><a href="/Tranzistor">Tranzistor</a></li>
+            <li><a href="/Dioda">Dioda</a></li>
+        </ul>
+    </li>
+     <li><a >Circuite integrate</a>
+            <ul>
+            <li><a href="/Porți logicii">Porți logicii</a> </li>
+        </ul>
+    </li>
+    <li><a >Aplicații</a>
+        <ul>
+               <li><a href="/Amplificator">Amplificator</a>
+        </ul>
+    </li>
+</ul>
+   </div>
+<br><br><br>
+   <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:70%">
+    <header class="w3-container w3-light-grey" >
+     <h3 style="background: #07c5f8">Porții logice</h3>
+            </header>
+            <div class="w3-container" style="background: white ; color:black" >
+        <p style="color: black" align="left">O poartă logică este un dispozitiv electronic numeric elementar implementând o funcțiune logică abstractă elementară.
+            Porțile logice sunt structurile de bază care permit realizarea unor funcții logice și matematice mult mai complexe în circuitele integrate digitale.
+            O poartă logică poate fi modelată ca o rețea de comutatoare controlate electric (de exemplu cu tranzistoare MOS).
+            La început porțile logice erau realizate din diode (lămpi electronice sau semiconductoare) și rezistențe electrice (discrete).</p>
+        </div>
+       </div>
+        </div>
+
+         <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:70%">
+    <header class="w3-container w3-light-grey" >
+     <h3 style="background: #07c5f8">Construcție și funcționare</h3>
+            </header>
+            <div class="w3-container" style="background: white ; color:black" >
+                <p style="color: black" align="left" >O poartă logică are una sau mai multe intrări digitale/binare (semnale reprezentând 0 logic sau 1 logic),
+                    și are ca ieșire o funcție simplă a acestor intrări, de exemplu ȘI logic sau SAU logic.
+                    O poartă logică nu are stări interne, intermediare. Aceasta înseamnă că pentru o combinație de valori binare (0 și 1) existentă la intrări,
+                    corespunde la ieșirea porții numai o anumită (definită) stare (valoare binară).
+                    Altfel exprimat, o poartă logică nu este, electronic, un circuit secvențial ci un circuit combi național  ("de combinare"),
+
+Porțile logice elementare sunt: Poarta ȘI(AND), poarta SAU(OR), poarta ȘI-NU(NAND), poarta SAU-NU(NOR), poarta SAU-EXCLUSIV(XOR).
+                    Porțile ȘI-NU engleză: NAND) și SAU-NU (engleză: NOR) sunt numite și porți universale,
+                    pentru că cu ajutorul lor pot fi reproduse (combi național ) oricare din funcțiile celorlalte porți.
+                    Ele sunt din acest punct de vedere, porți fundamentale.
+
+Porțile logice au cel puțin două intrări (cu excepția inversorului NU, engleză: NOT), putându-se ajunge până la 10 intrări, și o singură ieșire.</p>
+            </div>
+          </div>
+   </div>
+
+     <br>
+     <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:70%">
+            <div class="w3-container" style="background: white ; color:black" >
+                 <img src="/static/Img/Img_Teoria/Logic_port.png" align="center" class="imgresponsive">
+        <p style="color: black" align="center">Simbolurile pentru porțile logice</p>
+
+   </div>
+              </div>
+        </div>
+    <br>
+<div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:70%">
+            <div class="w3-container" style="background: white ; color:black" >
+        <H2 style="background: #07c5f8" align="center">Tabel</H2>
+            </div>
+  </div>
+</div>
+    <br>
+      <style>
+     table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+    color: black;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+
+
+
+
+    </style>
+
+
+ <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:70%">
+       <div class="w3-container" style="background: white ; color:black" >
+            <table style="color: black">
+                    <header class="w3-container w3-light-grey" >
+     <h3 >Poarta logică AND(Și)</h3>
+            </header>
+
+                <tr>
+                    <th style="color: white;background:#07c5f8">Opetație A &sdot; B</th>
+                    <th style="color: white;background:#07c5f8">A</th>
+                    <th style="color: white;background:#07c5f8">B</th>
+                    <th style="color: white;background:#07c5f8">Q</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+
+            </table>
+                  </div>
+     </div>
+</div>
+
+      <br>
+
+
+            <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:70%">
+       <div class="w3-container" style="background: white ; color:black" >
+            <table style="color: black">
+                    <header class="w3-container w3-light-grey" >
+     <h3 >Poarta logică OR(Sau)</h3>
+            </header>
+                <tr>
+                    <th style="color: white;background:#07c5f8">Opetație A+B</th>
+                    <th style="color: white;background:#07c5f8">A</th>
+                    <th style="color: white;background:#07c5f8">B</th>
+                    <th style="color: white;background:#07c5f8">Q</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+
+            </table>
+
+</div>
+      </div>
+     </div>
+<br>
+               <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:70%">
+       <div class="w3-container" style="background: white ; color:black" >
+            <table style="color: black">
+                    <header class="w3-container w3-light-grey" >
+     <h3 >Poarta logică NAND</h3>
+            </header>
+                <tr>
+                    <th style="color: white;background:#07c5f8">Opetație &not;(A&sdot;B)</th>
+                    <th style="color: white;background:#07c5f8">A</th>
+                    <th style="color: white;background:#07c5f8">B</th>
+                    <th style="color: white;background:#07c5f8">Q</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+
+            </table>
+</div>
+      </div>
+                   </div>
+        <br>
+
+
+
+                    <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:70%">
+       <div class="w3-container" style="background: white ; color:black" >
+            <table style="color: black">
+                    <header class="w3-container w3-light-grey" >
+     <h3 >Poarta logică NOR</h3>
+            </header>
+                <tr>
+                    <th style="color: white;background:#07c5f8">Opetație  &not;(A+B) ;</th>
+                    <th style="color: white;background:#07c5f8">A</th>
+                    <th style="color: white;background:#07c5f8">B</th>
+                    <th style="color: white;background:#07c5f8">Q</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+
+            </table>
+        </div>
+       </div>
+                         </div>
+
+        <br>
+                         <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:70%">
+       <div class="w3-container" style="background: white ; color:black" >
+            <table style="color: black">
+                    <header class="w3-container w3-light-grey" >
+     <h3 >Poarta logică XOR</h3>
+            </header>
+                <tr>
+                    <th style="color: white;background:#07c5f8">Opetație (A &sdot;  &not B) +( &not A &sdot; B );</th>
+                    <th style="color: white;background:#07c5f8">A</th>
+                    <th style="color: white;background:#07c5f8">B</th>
+                    <th style="color: white;background:#07c5f8">Q</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+
+            </table>
+
+        </div>
+  </div>
+                              </div>
+
+        <br>
+                            <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:70%">
+       <div class="w3-container" style="background: white ; color:black" >
+            <table style="color: black">
+                    <header class="w3-container w3-light-grey" >
+     <h3 >Poarta logică NOT</h3>
+            </header>
+                <tr>
+                    <th style="color: white;background:#07c5f8">Opetație Q ;</th>
+                    <th style="color: white;background:#07c5f8">Intrare</th>
+                    <th style="color: white;background:#07c5f8">Ieșire</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>0</td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>0</td>
+                    <td>1</td>
+
+                </tr>
+
+
+            </table>
+
+  </div>
+
+  </div>
+
+
+    </div>
+<br>
+ <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:70%">
+    <header class="w3-container w3-light-grey" >
+     <h3 style="background: #07c5f8">Exemplu</h3>
+            </header>
+       <div class="w3-container" style="background: white ; color:black" >
+    <p style="color: black" align="center">Un automat de cafea care are drept intrări apa, cafea , zahar si lapte si trebuie
+sa producă la ieșire cafea cu zahar si cu lapte (doar funcția de baza, fără partea de comanda, folosind doar NOT, AND, OR))</p>
+    <p style="color: black" align="center">Output=a AND c AND z AND l</p>
+    <br>
+    <p style="color: black" align="center">Diagrama logica:</p>
+    <br>
+    <img src="/static/Img/Img_Teoria/diagrama_automat_cafea.png" class="imgresponsive">
+
+
+    <table >
+        <tr>
+            <td style="color: white;background:#07c5f8">apa(a)</td>
+             <td style="color: white;background:#07c5f8">cafea(c)</td>
+             <td style="color: white;background:#07c5f8">z(zahar)</td>
+             <td style="color: white;background:#07c5f8">l(lapte)</td>
+             <td style="color: white;background:#07c5f8">a AND c</td>
+             <td style="color: white;background:#07c5f8">a AND c AND z</td>
+                <td style="color: white;background:#07c5f8">a AND c AND z AND l<br>
+                Output</td>
+        </tr>
+        <tr>
+             <td>0</td>
+             <td>0</td>
+             <td>0</td>
+             <td>0</td>
+             <td>0</td>
+             <td>0</td>
+             <td>0</td>
+        </tr>
+             <tr>
+             <td>0</td>
+             <td>0</td>
+             <td>0</td>
+             <td>1</td>
+             <td>0</td>
+             <td>0</td>
+             <td>0</td>
+        </tr>
+         <tr>
+             <td>0</td>
+             <td>0</td>
+             <td>1</td>
+             <td>0</td>
+             <td>0</td>
+             <td>0</td>
+             <td>0</td>
+        </tr>
+          <tr>
+             <td>0</td>
+             <td>1</td>
+             <td>0</td>
+             <td>0</td>
+             <td>0</td>
+             <td>0</td>
+             <td>0</td>
+        </tr>
+           <tr>
+             <td>0</td>
+             <td>0</td>
+             <td>1</td>
+             <td>1</td>
+             <td>0</td>
+             <td>0</td>
+             <td>0</td>
+        </tr>
+           <tr>
+             <td>0</td>
+             <td>1</td>
+             <td>1</td>
+             <td>0</td>
+             <td>0</td>
+             <td>0</td>
+             <td>0</td>
+        </tr>
+           <tr>
+             <td>1</td>
+             <td>1</td>
+             <td>1</td>
+             <td>0</td>
+             <td>1</td>
+             <td>1</td>
+             <td>0</td>
+        </tr>
+           <tr>
+             <td>1</td>
+             <td>1</td>
+             <td>1</td>
+             <td>1</td>
+             <td>1</td>
+             <td>1</td>
+             <td>1</td>
+        </tr>
+
+
+
+
+
+
+    </table>
+  </div>
+ </div>
+      </div>
+</body>
+
+
+
+</html>

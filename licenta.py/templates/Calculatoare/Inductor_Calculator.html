@@ -1,0 +1,57 @@
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="static/Img/Logo_VET.jpg">
+    <link href="/static/css/calculator.css" rel="stylesheet">
+        <link href="/static/css/w3.css" rel="stylesheet">
+
+</head>
+<body>
+<ul>
+ <li><a href="../Calculatoare">Menu Calculatoare</a></li>
+</ul>
+<br><br>
+<div class="FormulaDiv">
+    <div class="w3-center">
+    <img src="/static/Img/Img_Teoria/Inductor_formual+schema.png"  width="332" class="imgresponsive3"  alt="iductor_formula_schema"  >
+        </div>
+    </div>
+
+
+
+<div class="myDiv">
+    <h2> Calculator Inductor</h2>
+    <form method="post" action="{{ url_for('inductor_calculator') }}" id="calculator_form">
+        <label for="Input1">Inductor1:</label>
+        <label><input type="text" name="Inductor1" id="Inductor1" placeholder="Introduceti valoarea primului inductor"></label>
+        <br/>
+        <label for="Input2">Inductor2:</label>
+       <label> <input type="text" name="Inductor2" id="Inductor2" placeholder="Introduceti valoarea al doilea inductor"></label>
+        <br/>
+        <label for="operation">Operatie</label>
+        <select id="operation" name="operation">
+            <option value="serial">1.serial</option>
+            <option value="paralel">2.paralel</option>
+        </select>
+        <br/>
+        <br>
+          <label >Atenție dacă valoare este de tip float trebuie introdusă de exemplu 2.2 nu 2,2 !</label>
+          <br>        <br>
+        <input type="submit" value="Submit"/>
+        <input type="reset"  value="RESET" style="color: red;"/>
+    </form>
+    {% if calculation_success == True %}
+        <br/>
+        <p>Rezultatul:</p>
+        <label> <input type="text" name="Rezultat"  value="{{result}} {{"H"}}"></label>
+    {% endif %}
+    {% if calculation_success == False %}
+        <br/>
+       <label> <p >{{error}}</p></label>
+        <p>{{Inductor1}} {{operation}} {{Inductor2}} ={{result}}"</p>
+    {% endif %}
+</div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test practic</title>
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="icon" href="static/Img/Logo_VET.jpg">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+         <link href="/static/css/Test_teorie.css" rel="stylesheet">
+    <link href="/static/css/w3.css" rel="stylesheet">
+</head>
+
+<div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+          <header class="w3-container w3-light-grey" >
+   <H1  style="background: #07c5f8"  align="center">Test practic vet</H1>
+            </header>
+       <style>
+        .ul{
+            display: inline-block;
+            padding-left: 0;
+            text-align: left;
+        }
+
+    </style>
+   <div class="w3-container" style="background: white ; color:black" >
+</div>
+      </div>
+        </div>
+<br>
+<br>
+<form name="test" method="post" id="test" action="{{ url_for('Test_pracit_rezultat') }}">
+
+
+<div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+          <header class="w3-container w3-light-grey" >
+   <H4  style="background: #07c5f8"  align="left">1.Dacă este R1=2&Omega;, R2=4&Omega;, R3=6&Omega;, R4=60&Omega;, R5=40&Omega;, R6=30&Omega; și I=60A din următoare schemă dată determină rezistența totală, tesiunea și puterea</H4>
+            </header>
+   <div class="w3-container" style="background: white ; color:black" >
+<img src="/static/Img/Img_test_practic/Exercitiu1.png" class="img-fluid">
+            <br>
+       <div class="ul">
+ <label  for="Exercitiu1">A)Introduce valaorea resistenței totale</label>
+    <input type="text"  name="Exercitiu1_a" id="Exercitiu1_a" placeholder="Rt=" style="left: 290px">
+<br>
+          <label for="Exercitiu1">B)Introduce valaorea tensiuni</label>
+    <input type="text" name="Exercitiu1_b" id="Exercitiu1_b" placeholder="U=" style="position:relative;left: 76px">
+         <br>
+         <label for="Exercitiu1">C)Introduce valaorea puteri</label>
+    <input type="text"  name="Exercitiu1_c" id="Exercitiu1_c" placeholder="P=" style="position:relative;left: 94px">
+           </div>
+       </div>
+</div>
+      </div>
+
+<div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+          <header class="w3-container w3-light-grey" >
+   <H4  style="background: #07c5f8"  align="left">2.Circuitul RLC este conectat la o sursă alternativă cu frecvența f=50HZ. Tensiunea rezistorului este 40V.
+       Dacă știm că R=4&Omega;, C=45&micro; și L=4mH.  </H4>
+            </header>
+   <div class="w3-container" style="background: white ; color:black" >
+          <div class="ul">
+ <label for="Exercitiu2_XL">A)Determină XL </label>
+       <input type="text"  name="Exercitiu2_XL" id="Exercitiu2_XL" placeholder="XL=" style="position:relative;left: 170px">
+       <br>
+ <label for="Exercitiu2_XC">B)Determină XC</label>
+       <input type="text"  name="Exercitiu2_XC" id="Exercitiu2_XC" placeholder="XC=" style="position:relative;left: 170px">
+        <br>
+       <label for="Exercitiu2_UC">C)Determină tensiunia capacitorului </label>
+       <input type="text"  name="Exercitiu2_UC" id="Exercitiu2_UC" placeholder="UC=">
+              <br>
+              <label for="Exercitiu2_UL">D)Determină tensiunia bobinei </label>
+       <input type="text"  name="Exercitiu2_UL" id="Exercitiu2_UL" placeholder="UL=" style="position:relative;left: 47px">
+</div>
+</div>
+      </div>
+        </div>
+    <div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+          <header class="w3-container w3-light-grey" >
+
+   <H4  style="background: #07c5f8"  align="left">3.Să se determine  U1, U2, Q2, Q12.Se cunosc: C1=10nC, C2=20nC, Q1=100nc, U=220V </H4>
+            </header>
+   <div class="w3-container" style="background: white ; color:black" >
+       <img src="static/Img/Img_test_practic/Exercitiu3_schema%20.png" class="img-fluid">
+       <br>
+       <div class="ul">
+<label for="Exercitiu3_U1"> A)Introduce valoarea calculată pentru U1</label>
+       <input type="text"  name="Exercitiu3_U1" id="Exercitiu3_U1" placeholder="U1=" style="position:relative;left: 14px">
+       <br>
+       <label for="Exercitiu3_U2">B)Introduce valoarea calculată pentru U2 </label>
+       <input type="text"  name="Exercitiu3_U2" id="Exercitiu3_U2" placeholder="U2=" style="position:relative;left: 14px">
+          <br>
+        <label for="Exercitiu3_Q2">C)Introduce valoarea calculată pentru Q2 </label>
+       <input type="text"  name="Exercitiu3_Q2" id="Exercitiu3_Q2" placeholder="Q2=" style="position:relative;left: 14px">
+          <br>
+          <label for="Exercitiu3_Q12">D)Introduce valoarea calculată pentru Q12  </label>
+       <input type="text"  name="Exercitiu3_Q12" id="Exercitiu3_Q2" placeholder="Q12=" style="position:relative;left: 2px">
+           </div>
+</div>
+  </div>
+    </div>
+<br>
+
+
+
+
+
+
+
+
+
+<div class="w3-center">
+    <input type="submit" value="Submit" style="background: #07c5f8;color: white;width: 300px;height: 70px"  />
+</div>
+
+
+</form>
+
+
+
+
+
+
+
+
+</html>

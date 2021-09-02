@@ -1,0 +1,50 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body{
+background-image: url("/static/Img/Componentes.jpg");
+    background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Times New Roman", Times, serif;
+	color:white;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.myDiv {
+  border: 5px outset #417373;
+  background-color: #07c5f8;
+  text-align: center;
+}
+
+
+
+
+

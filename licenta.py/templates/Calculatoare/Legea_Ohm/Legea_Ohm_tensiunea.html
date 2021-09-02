@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="static/Img/Logo_VET.jpg">
+   <link href="/static/css/calculator.css" rel="stylesheet">
+    <link href="/static/css/w3.css" rel="stylesheet">
+</head>
+<body>
+<ul>
+ <li><a href="/Calculatoare">Menu Calculatoare</a></li>
+    <li><a href="/Legea_Lui_Ohm_r">Ohm rezistenta</a></li>
+    <li><a href="/Legea_Lui_Ohm_i">Ohm curentul</a></li>
+        <li><a href="/Legea_Lui_Ohm_p">Ohm puterea</a></li>
+</ul>
+<br><br>
+<div class="FormulaDiv">
+  <div class="w3-center">
+    <img src="/static/Img/Img_Teoria/Ohm_tensiunea.png" align="center" class="imgresponsive3"></div>
+  </div>
+<div class="myDiv">
+    <h2>Tensiunea</h2>
+    <form method="post" action="{{ url_for('Legea_Ohm_tensiunea') }}" id="calculator_form">
+        <label for="curentul">Curentul electric(I):</label>
+        <input type="text" name="curentul" id="curentul" placeholder="Introduceti valoarea curentului">
+        <br/>
+        <label for="rezistenta">Rezistenta(R):</label>
+        <input type="text" name="rezistenta" id="rezistenta" placeholder="Introduceti valoarea rezistenței">
+        <br/>
+         <label for="puterea">Puterea(P):</label>
+        <input type="text" name="puterea" id="puterea" placeholder="Introduceti valoarea puterei">
+        <br/>
+        <br>
+          <label >Atenție dacă valoare este de tip float trebuie introdusă de exemplu 2.2 nu 2,2 !</label><br>
+            <label>Ai nevoie de 2 parametri care sunt mai mari decât 0 iar al treilea parametru să fie 0</label>
+
+          <br>        <br>
+        <input type="submit" value="Submit"/>
+        <input type="reset"  value="RESET" style="color: red;"/>
+        <br>
+    </form>
+    {% if calculation_success == True %}
+        <br/>
+       <p>Rezultatul:</p>
+        <label>
+            <input type="text" {{Curentul}} {{Rezistenta}} {{Puterea}}  name="Rezultat" value="{{ "Valoarea tensiuni este =" }}{{result}}{{ "V" }}">
+        </label>
+    {% endif %}
+    {% if calculation_success == False %}
+        <br/>
+        <p>{{error}}</p>
+        <p>{{Curentul}} {{operation}} {{Rezistenta}} {{Puterea}} {{Tensiunea}}  = "{{result}}"</p>
+    {% endif %}
+</div>
+</body>
+</html>

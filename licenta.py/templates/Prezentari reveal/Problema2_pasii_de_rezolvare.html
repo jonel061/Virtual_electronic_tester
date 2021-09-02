@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ro" xmlns="http://www.w3.org/1999/html">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js 2</title>
+
+		<link rel="stylesheet" href="../../static/reveal/dist/reset.css">
+		<link rel="stylesheet" href="../../static/reveal/dist/reveal.css">
+		<link rel="stylesheet" href="../../static/reveal/dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../../static/reveal/plugin/highlight/monokai.css" id="highlight-theme">
+
+
+    </head>
+	<body>
+       <style>
+    @media ( max-width: 520px) {
+        p{
+            font-size: 30px;
+        }
+    }
+        </style>
+<div class="reveal">
+   <div class="slides">
+              <section data-background-color="white">
+                    <section data-background-color="white">
+      <p data-background-color="white" ><h5 style="color: black">Rezolvare exercițiu 2</h5>
+                  <p style="color: black;" align="center" > Știm că UR=40V R=4 &Omega;, L=4mH, C=45 &micro;F și f=50HZ <br>
+                      Pentru a rezolva subproblema a trebuie <br>să identificăm formula pentru XL=?<br></p>
+                  <p style="color: black"  align="center"> XL=2 &sdot; &pi; &sdot; f &sdot; L</p>
+                      </section>
+              <section> <p style="color: black;" align="center">  XL=2 &sdot; &pi; &sdot; f &sdot; L
+                  =2 &sdot; 3,14 &sdot; 50Hz &sdot; 4 &sdot; 10<sup>-3</sup>H=1,26 &Omega; </p></section>
+                  <section> <p style="color: black;" align="center">Pentru a rezolva subpunctul b trebuie să determinămformula pentru XC=?</p><p style="color: black" align="center">XC=1 /(W &sdot; C)=
+       1 /( 2 &sdot; &pi; &sdot; f &sdot; c)= <br> 1 / (2 &sdot; 3,14 &sdot; 50HZ &sdot; 40 &sdot;10<sup>-6</sup>F)=70,75 &Omega;</p>
+       </section>
+
+                  <section>
+                      <p style="color: black;" align="center">Pentru a rezolva subpunctul c trebuie să  determinăm I și formula pentru UC=?</p>
+                    <p style="color: black;" align="center">   I=U<sub>R</sub> /R= 40/4=10A   <br>
+                        UC=I &sdot; XC=10A &sdot; 70,75=707,5V </p>
+                 </section>
+<section>
+                  <p style="color: black;" align="center">Pentru a rezolva subpunctul trebuie să determinăm formula pentru UL=?
+                    <p style="color: black;" align="center">      UL=I &sdot; XL=10A &sdot; 1,26=12,6V    </p>
+
+
+
+                </section>
+                          </section>
+
+
+
+
+
+
+
+			</div>
+		</div>
+
+
+
+        <script src="../../static/reveal/plugin/math/math.js"></script>
+		<script src="../../static/reveal/dist/reveal.js"></script>
+		<script src="../../static/reveal/plugin/notes/notes.js"></script>
+		<script src="../../static/reveal/plugin/markdown/markdown.js"></script>
+		<script src="../../static/reveal/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+  Reveal.initialize({
+    math: {
+      mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+      config: 'TeX-AMS_HTML-full',
+      // pass other options into `MathJax.Hub.Config()`
+      TeX: { Macros: { RR: "{\\bf R}" } }
+    },
+    plugins: [ RevealMath ]
+  });
+		</script>
+	</body>
+</html>

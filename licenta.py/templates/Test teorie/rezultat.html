@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <link href="/static/css/Test_teorie.css" rel="stylesheet">
+        <link rel="icon" href="static/Img/Logo_VET.jpg">
+        <link href="/static/css/w3.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <title>Test teorie rezultat</title>
+</head>
+<body>
+
+<style>
+
+   button{
+       background-color: #07c5f8;
+       padding: 32px 16px;
+       margin-left: auto;
+       margin-right: auto;
+        width: 300px;
+         height: 70px;
+
+   }
+
+   .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+    .ul{
+            display: inline-block;
+            padding-left: 0;
+            text-align: left;
+        }
+
+</style>
+<script>
+    function  confirmation() {
+        var ask = window.confirm("Dorești să te intorci la pagina principală?");
+        if (ask) {
+             window.location.href = "/";
+        }
+    }
+    $(document).ready(function(){
+  $("#hide").click(function(){
+    $("#hide").hide();
+  });
+  $("#show").click(function(){
+    $("#show").show();
+  });
+});
+
+</script>
+
+
+ <br>
+<div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:50%">
+    <header class="w3-container w3-light-grey" >
+     <h1 style="background: #07c5f8">Rezultat</h1>
+            </header>
+       <div class="w3-container" style="background: white ; color:black" >
+       <div class="ul">
+              <p style="color: #111111;font-size: x-large">{{ intrebarea1}}</p>
+<p style="color: #111111;font-size: x-large" > Numar raspunsuri corecte:{{ correct }}</p>
+<p style="color: #111111;font-size: x-large">Numar raspunsuri incorecte:{{ incorect }}</p>
+<p style="color: #111111;font-size: x-large">Nota obtinuta este:{{ nota_obtinuta}}</p>
+
+       </div>
+
+<div class="w3-center">
+               <div class="modal fade" id="Test_teorie" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: relative;left: 140px"><span aria-hidden="true">&times;</span></button>
+                    <br>
+                    <div class="w3-center">
+
+                        <h4 class="modal-title" id="myModalLabel" style="background: #07c5f8;color: white">Dorești să te întroci pe pagina principală?</h4>
+</div>
+                    </div>
+                <div class="modal-footer">
+                    <button  style="height: 9mm;width: 10mm;align-content: center;background: #07c5f8;color: white"  type="button" class="btn btn-default"   data-dismiss="modal">Nu</button>
+                    <a type="button"   style="background: #07c5f8;color: white"  class="btn btn-default" href="/" >Da</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="center">
+        <a data-toggle="modal" data-target="#Test_teorie" href="#"> <button type="submit" class="btn btn-primary" style="background: #07c5f8;color: white">Pagina priniciaplă</button> </a>
+    </div>
+       </div>
+</div>
+       </div>
+
+</div>
+
+
+</body>
+</html>
